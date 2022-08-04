@@ -1,1 +1,3 @@
-# MikaWebsite
+# Mika's Website
+
+Personal website 
