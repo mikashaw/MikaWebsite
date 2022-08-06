@@ -527,7 +527,8 @@ img{
 
 .skills__close .skills__list{
     height: 0;
-    overflow: hidden
+    overflow: hidden;
+
 }
 
 .skills__open .skills_list{
@@ -536,8 +537,14 @@ img{
 
 }
 
+.skills__open{
+    margin-bottom: var(--mb-2-5);
+}
+
 .skills__open .skills__arrow{
     transform: rotate(-180deg)
 }
+
+
 
 
