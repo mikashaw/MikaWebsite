@@ -10,9 +10,9 @@
     /*===== COLORS =====*/
     --hue-color: 225;
     --first-color: hsl(var(--hue-color), 34%, 33%);
-    --first-color-second: hsl(var(--hue-color), 55%, 33%);
+    --first-color-second: hsl(var(--hue-color), 30%, 50%);
     --first-color-alt: hsl(var(--hue-color), 22%, 30%);
-    --first-color-lighter: hsl(var(--hue-color), 42%, 70%);
+    --first-color-lighter: hsl(var(--hue-color), 35%, 80%);
     --title-color: hsl(var(--hue-color), 8%, 15% );
     --text-color: hsl(var(--hue-color), 8%, 45% );
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -933,5 +933,55 @@ img{
     padding: .25rem .5rem .5rem 0;
 }
 
+/* ======================== FOOTER ======================== */ 
 
+.footer{
+    padding-top: 2rem;
+}
 
+.footer__container{
+    row-gap: 3.5rem;
+}
+
+.footer__bg{
+    background-color: var(--first-color-second); 
+    padding:2rem 0 3rem;
+}
+
+.footer__title{
+    font-size: var(--h1-font-size);
+    margin-bottom:var(--mb-0-25);
+}
+
+.footer__subtitle{
+    font-size: var(--small-font-size);
+}
+
+.footer__links{
+    display:flex;
+    flex-direction: column;
+    row-gap: 1.5rem; 
+    
+}
+
+.footer__link:hover{
+    color: var(--first-color-lighter);
+
+}
+
+.footer__link{
+    color: var(--first-color);
+}
+
+.footer__copy{
+    font-size: var(--smaller-font-size);
+    text-align: center; 
+    color: var(--text-color-light);
+    margin-top:var(--mb-3);
+}
+
+.footer__title, 
+.footer__subtitle,
+.footer__link{
+    color: #fff;
+}
