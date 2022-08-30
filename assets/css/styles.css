@@ -9,8 +9,8 @@
 
     /*===== COLORS =====*/
     --hue-color: 225;
-    --first-color: hsl(var(--hue-color), 34%, 33%);
-    --first-color-second: hsl(var(--hue-color), 30%, 50%);
+    --first-color: hsl(var(--hue-color), 34%, 37%);
+    --first-color-second: hsl(var(--hue-color), 30%, 40%);
     --first-color-alt: hsl(var(--hue-color), 22%, 30%);
     --first-color-lighter: hsl(var(--hue-color), 35%, 80%);
     --title-color: hsl(var(--hue-color), 8%, 15% );
@@ -243,6 +243,17 @@ img{
 .hide-toggle{
     bottom: -100;
     color: white;
+}
+
+/* Active Link */ 
+
+.active-link{
+    color: var(--first-color);
+}
+
+/* Change Background Header */ 
+.scroll-header{
+    box-shadow: 0 -1px 4px rgba(0,0,0,.15)
 }
 
 /* ================== HOME ===================*/
@@ -985,3 +996,28 @@ img{
 .footer__link{
     color: #fff;
 }
+
+/* ====== SCROLL UP =========*/ 
+
+.scrollup{
+    position: fixed; 
+    right: 1rem; 
+    bottom: -20%; 
+    background-color: var(--first-color); 
+    opacity: .8; 
+    padding: 0 .3rem; 
+    border-radius: .4rem; 
+    z-index: var(--z-tooltip); 
+    transition: .4s;
+}
+
+.scrollup:hover{
+    background-color: var(--first-color-alt);
+}
+
+.scrollup__icon{
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+/* show scroll */
