@@ -201,3 +201,18 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
   })
+
+  /* ==============  CONTACT ME ===============*/
+
+  const contact_me = document.getElementById("contact_me")
+  window.location.href = link;
+
+  function sendMail() {
+
+    var link = "mailto:m24shaw@uwaterloo.ca"
+             + "?cc=CCaddress@example.com"
+             + "&subject=" + escape("Website Mail")
+             + "&body=" + escape(document.getElementById('message').value )}
+
+
+contact_me.addEventListener('click', sendMail)
