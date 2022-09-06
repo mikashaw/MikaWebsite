@@ -440,13 +440,13 @@ img{
     width: 200px;
     border-radius: .5rem;
     justify-self:center;
+    background-color: var(--first-color);
 
 }
 
 .about__description{
     text-align: center;
     margin-bottom: var(--mb-2-5);
-
 }
 
 .about__info{
@@ -457,7 +457,6 @@ img{
 
 .about__info-name{
     font-size: var(--smaller-font-size);
-
 }
 
 .about__info-title{
